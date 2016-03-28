@@ -11,6 +11,7 @@ import android.widget.EditText;
  */
 public class LoginActivity extends Activity implements View.OnClickListener {
 
+    //手机号码输入框
     private EditText inputPhoneEt;
 
     private EditText inputCodeEt;
@@ -29,7 +30,9 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     public void init() {
         inputPhoneEt = (EditText) findViewById(R.id.login_input_phone_et);
-
+        inputCodeEt = (EditText) findViewById(R.id.login_input_code_et);
+        requestCodeBtn = (Button) findViewById(R.id.login_request_code_btn);
+        commitBtn = (Button) findViewById(R.id.login_commit_btn);
     }
 
     public void onClick(View v) {
